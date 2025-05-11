@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battery Management System</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 40px;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+      }
+      code {
+        background: #eee;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.95em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Battery Management System API</h1>
+    <p>
+      Use tools like <code>curl</code>, Postman, or your frontend to interact
+      with:
+    </p>
+    <ul style="text-align: left; display: inline-block; margin-top: 20px;">
+      <li><code>POST /api/battery/data</code> – Submit battery data</li>
+      <li>
+        <code>GET /api/battery/:id</code> – Retrieve all data for a battery
+      </li>
+      <li><code>GET /api/battery/:id/:field</code> – Specific field data</li>
+      <li>
+        <code>GET /api/battery/:id/:field?start=&end=</code> – Field data in
+        time range
+      </li>
+    </ul>
+    <p style="margin-top: 30px;">
+      🔐 Protected with JWT – use the token in the
+      <code>Authorization</code> header.
+    </p>
+  </body>
+</html>
